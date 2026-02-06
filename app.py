@@ -14,7 +14,7 @@ jokes = [
 
 @app.route('/')
 def home():
-    return "Welcome to the Joke API! Use /jokes/random to get a random joke. Powered by AQIB JAVED"
+    return "Welcome to the Joke API! Use /jokes/random to get a random joke."
 
 
 @app.route('/jokes/random', methods=['GET'])
@@ -23,13 +23,10 @@ def get_a_joke():
     return jsonify(joke)
 
 
-@app.route ('/aqibjaved')
-    def aqibinfo():
-        return "This Api is powered by Aqibjaved it is currently a WIP!"
+@app.route('/aqibjaved')
+def aqibinfo():
+    return "This Api is powered by Aqibjaved it is currently a WIP!"
 
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
-
-
-
