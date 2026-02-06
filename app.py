@@ -23,12 +23,13 @@ def get_a_joke():
     return jsonify(joke)
 
 
-@app.route ('/aqibjaved',methods=['GET'])
+@app.route ('/aqibjaved')
     def aqibinfo():
         return "This Api is powered by Aqibjaved it is currently a WIP!"
 
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
+
 
 
